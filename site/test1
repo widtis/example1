@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <HTML>
-<HEADER>
+<HEAD>
 <TITLE> My first site </TITLE>
-</HEADER>
+</HEAD>
 <BODY>
-<H1>
-	HELLO WORLD!
-</H1>
+<H1>HELLO WORLD!</H1>
 </BODY>
 </HTML>
