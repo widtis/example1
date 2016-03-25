@@ -3,19 +3,63 @@
 <HEAD>
 <TITLE> My first site </TITLE>
 <STYLE>
-body {
+body, html {
 	box-sizing: content-box;
+	height: 100%;
+	width: 100%;
 }
-p {
-	background-color: blue;
+img {
+	width: 800px;
+	height: 600px;
 }
-div {
-	height: 10%;
+.dropdown {
+    position: relative;
+    
+    height: 1%;
 	width: 20%;
-	margin: 5%;
+	padding: 1%;
+	
 	text-align: center;
-	background-color: blue;
+	background-color: #73AD21;
+	border-radius: 20px;
+	}
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0000FF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    float: right;
+
+}
+.image {
+	
+	height: 10%;
+	width: 70%;
+	float: right;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+div:dropdown {
+	postion: relative;
+	display: inline-block;
+}
+div.dropdown:hover {
+	background-color: gray;
+}
+div:dropdown-content {
+	display: block;
+}
+a {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
 }
 
 </STYLE>
@@ -23,12 +67,24 @@ div {
 
 <BODY>
 
-<div>Jon Bolduc</div>
-<div>Becky Bolduc</div>
-<div>Ryan Gorham</div>
-<div>Ben Dove</div>
-<div>Josh Conover</div>
-<div>Shey Conover</div>
+
+	<div class="image"> <img id="bracket" src="jb_bracket.png"></div>
+	<div class="dropdown" onclick="changeImage('jb_bracket.png')"> Jon Bolduc </div>
+	<div class="dropdown" onclick="changeImage('math_test.png')">Becky Bolduc</div>
+	<div class="dropdown">Ryan Gorham</div>
+	<div class="dropdown">Ben Dove</div>
+	<div class="dropdown">Josh Conover</div>
+	<div class="dropdown">Shey Conover</div>
+	<div class="dropdown">Dave Pike</div>
+	<div class="dropdown">Mark Danks</div>
+	<div class="dropdown">Matt Richards</div>
+	<div class="dropdown">Matt Durkee</div>
+<script type="text/javascript">
+	function changeImage(name){
+		document.getElementById('bracket').src = name
+	}
+</script>	
+
 
 </BODY>
 </HTML>

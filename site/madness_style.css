@@ -1,0 +1,39 @@
+html, body {
+	height: 100%;
+	box-sizing: border-box;
+}
+.menu {
+	background-color: green;
+	height: 6%;
+	width: 10%;
+	float: left;
+	border-radius: 15px;
+	text-decoration: none;
+	text-align: center;
+	margin-bottom: 1px;
+
+
+
+
+}
+.menu:hover {
+	background-color: gray;
+}
+.image{
+	float: left;
+	border: groove;
+	height: 80%;
+	width: 60%;
+	margin-left: 1%
+
+}
+.menu_item {
+	border-radius: 15px;
+	float: left;
+	height:10%;
+	width: 20%;
+	background-color: green;
+	border: double;
+	color: white;
+
+}
